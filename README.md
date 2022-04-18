@@ -1,4 +1,4 @@
-# **::GCFS::** - General Charger Feed Specification
+# **GCFS** - General Charger Feed Specification
 
 Specification for public (Not just) EV Chargers in the wild. A JSON Document for apps and services to use and show data about chargers without separate API hassle
 
