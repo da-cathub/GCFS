@@ -11,10 +11,10 @@ Specification for public (Not just) EV Chargers in the wild. A JSON Document for
 
 | Feature              | Static | Dynamic |
 | -------------------- | ------ | ------- |
-| Charger Localization | ✔️     | ✔️      |
-| Charger types        | ✔️     | ✔️      |
+| Charger Localization | ✔️      | ✔️       |
+| Charger types        | ✔️      | ✔️       |
 | Parking fees         | ❌      | ✔️      |
 | Charger price        | ❌      | ✔️      |
-| Available spaces      | ❌      | ✔️      |
-| Rent out links        | ✔️     | ✔️      |
+| Available spaces     | ❌      | ✔️      |
+| Rent out links       | ✔️      | ✔️       |
 
