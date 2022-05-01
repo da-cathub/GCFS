@@ -1,0 +1,111 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "https://gcfs.isithere.sk/discotype/alpha/publisher.schema.json",
+    "title": "Root Schema",
+    "type": "object",
+    "default": {},
+    "required": [
+        "$schema",
+        "type",
+        "data"
+    ],
+    "properties": {
+        "$schema": {
+            "title": "The $schema Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "https://gcfs.isithere.sk/discotype/alpha/publisher.schema.json"
+            ]
+        },
+        "type": {
+            "title": "The type Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "Feed:discovery:publisher"
+            ]
+        },
+        "data": {
+            "title": "The data Schema",
+            "type": "object",
+            "default": {},
+            "required": [
+                "$type",
+                "name",
+                "url",
+                "contact"
+            ],
+            "properties": {
+                "$type": {
+                    "title": "The $type Schema",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "Feed:Publisher"
+                    ]
+                },
+                "name": {
+                    "title": "The name Schema",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "The Publisher"
+                    ]
+                },
+                "url": {
+                    "title": "The url Schema",
+                    "type": "string",
+                    "default": "",
+                    "examples": [
+                        "http://www.example.com"
+                    ]
+                },
+                "contact": {
+                    "title": "The contact Schema",
+                    "type": "array",
+                    "default": [],
+                    "items": {
+                        "title": "A Schema",
+                        "type": "string",
+                        "examples": [
+                            "mailto:example@example.com",
+                            "tel:+1-555-555-5555",
+                            "http://www.example.com/contact"
+                        ]
+                    },
+                    "examples": [
+                        ["mailto:example@example.com",
+                            "tel:+1-555-555-5555",
+                            "http://www.example.com/contact"
+                        ]
+                    ]
+                }
+            },
+            "examples": [{
+                "$type": "Feed:Publisher",
+                "name": "The Publisher",
+                "url": "http://www.example.com",
+                "contact": [
+                    "mailto:example@example.com",
+                    "tel:+1-555-555-5555",
+                    "http://www.example.com/contact"
+                ]
+            }]
+        }
+    },
+    "examples": [{
+        "$schema": "https://gcfs.isithere.sk/discotype/alpha/publisher.schema.json",
+        "type": "Feed:discovery:publisher",
+        "data": {
+            "$type": "Feed:Publisher",
+            "name": "The Publisher",
+            "url": "http://www.example.com",
+            "contact": [
+                "mailto:example@example.com",
+                "tel:+1-555-555-5555",
+                "http://www.example.com/contact"
+            ]
+        }
+    }]
+}

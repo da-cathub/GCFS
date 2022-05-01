@@ -1,0 +1,15 @@
+{ 
+    "$schema": "https://gcfs.isithere.sk/discotype/alpha/providers.schema.json",
+    "type": "Feed:discovery:provider",
+    "data": [
+        {
+            "$type": "Feed:Provider",
+            "name": "The Provider",
+            "id": "the-provider",
+            "url": "http://www.example.com",
+            "contact": [
+                "mailto:example@example.com", "tel:+1-555-555-5555", "http://www.example.com/contact"
+            ]
+        }
+    ]
+}

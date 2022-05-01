@@ -1,0 +1,80 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "https://gcfs.isithere.sk/discotype/alpha/discovery.schema.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "$schema",
+        "type",
+        "data"
+    ],
+    "properties": {
+        "$schema": {
+            "type": "string",
+            "default": "",
+            "title": "The $schema Schema",
+            "examples": [
+                "https://gcfs.isithere.sk/discotype/alpha/discovery.schema.json"
+            ]
+        },
+        "type": {
+            "type": "string",
+            "default": "",
+            "title": "The type Schema",
+            "examples": [
+                "Feed:discovery"
+            ]
+        },
+        "data": {
+            "type": "object",
+            "default": {},
+            "title": "The data Schema",
+            "required": [
+                "publisher",
+                "providers",
+                "chargers"
+            ],
+            "properties": {
+                "publisher": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The publisher Schema",
+                    "examples": [
+                        "https://try.gcfs.isithere.sk/gcfs/charginginco/publisher.json"
+                    ]
+                },
+                "providers": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The providers Schema",
+                    "examples": [
+                        "https://try.gcfs.isithere.sk/gcfs/charginginco/providers.json"
+                    ]
+                },
+                "chargers": {
+                    "type": "string",
+                    "default": "",
+                    "title": "The chargers Schema",
+                    "examples": [
+                        "https://try.gcfs.isithere.sk/gcfs/charginginco/chargers.json"
+                    ]
+                }
+            },
+            "examples": [{
+                "publisher": "https://try.gcfs.isithere.sk/gcfs/charginginco/publisher.json",
+                "providers": "https://try.gcfs.isithere.sk/gcfs/charginginco/providers.json",
+                "chargers": "https://try.gcfs.isithere.sk/gcfs/charginginco/chargers.json"
+            }]
+        }
+    },
+    "examples": [{
+        "$schema": "https://gcfs.isithere.sk/discotype/discovery.schema.json",
+        "type": "Feed:discovery",
+        "data": {
+            "publisher": "https://try.gcfs.isithere.sk/gcfs/charginginco/publisher.json",
+            "providers": "https://try.gcfs.isithere.sk/gcfs/charginginco/providers.json",
+            "chargers": "https://try.gcfs.isithere.sk/gcfs/charginginco/chargers.json"
+        }
+    }]
+}

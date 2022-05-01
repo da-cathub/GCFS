@@ -4,6 +4,9 @@
 
 Specification for public (Not just) EV Chargers in the wild. A JSON Document for apps and services to use and show data about chargers without separate API hassle
 
+### Latest Releases
+- `⍺lpha` First Release - [https://gcfs.isithere.sk/discotype/alpha/](https://gcfs.isithere.sk/discotype/alpha/)
+
 ### Static Feed vs. Dynamic Feed
 
 | Feature              | Static | Dynamic |

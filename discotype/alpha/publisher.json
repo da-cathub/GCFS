@@ -1,0 +1,12 @@
+{ 
+    "$schema": "https://gcfs.isithere.sk/discotype/alpha/publisher.schema.json",
+    "type": "Feed:discovery:publisher",
+    "data": {
+        "$type": "Feed:Publisher",
+        "name": "The Publisher",
+        "url": "http://www.example.com",
+        "contact": [
+            "mailto:example@example.com", "tel:+1-555-555-5555", "http://www.example.com/contact"
+        ]
+    }
+}

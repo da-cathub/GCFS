@@ -1,0 +1,35 @@
+{ 
+    "$schema": "https://gcfs.isithere.sk/discotype/alpha/chargers.schema.json",
+    "type": "Feed:discovery:chargers",
+    "data": [
+        {
+            "$type": "Feed:Charger",
+            "name": "The Charger",
+            "provider": "the-provider",
+            "gps": [17.10643, 48.15757],
+            "plugs": [
+                {
+                    "$type": "Feed:Charger:Plug",
+                    "type": "type", 
+                    "voltage": "voltage", 
+                    "amperage": "amperage", 
+                    "available": "available"
+                }
+                {
+                    "$type": "Feed:Charger:Plug",
+                    "type": "type", 
+                    "voltage": "voltage", 
+                    "amperage": "amperage", 
+                    "available": "unavailable"
+                }
+                {
+                    "$type": "Feed:Charger:Plug",
+                    "type": "type", 
+                    "voltage": "voltage", 
+                    "amperage": "amperage", 
+                    "available": "unknown"
+                }
+            ]
+        }
+    ]
+}

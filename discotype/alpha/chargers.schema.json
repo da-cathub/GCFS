@@ -1,0 +1,271 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "https://gcfs.isithere.sk/discotype/alpha/chargers.schema.json",
+    "title": "Root Schema",
+    "type": "object",
+    "default": {},
+    "required": [
+        "$schema",
+        "type",
+        "data"
+    ],
+    "properties": {
+        "$schema": {
+            "title": "The $schema Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "https://gcfs.isithere.sk/discotype/alpha/chargers.schema.json"
+            ]
+        },
+        "type": {
+            "title": "The type Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "Feed:discovery:chargers"
+            ]
+        },
+        "data": {
+            "title": "The data Schema",
+            "type": "array",
+            "default": [],
+            "items": {
+                "title": "A Schema",
+                "type": "object",
+                "default": {},
+                "required": [
+                    "$type",
+                    "name",
+                    "gps",
+                    "plugs"
+                ],
+                "properties": {
+                    "$type": {
+                        "title": "The $type Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "Feed:Charger"
+                        ]
+                    },
+                    "name": {
+                        "title": "The name Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "The Charger"
+                        ]
+                    },
+                    "gps": {
+                        "title": "The gps Schema",
+                        "type": "array",
+                        "default": [],
+                        "items": {
+                            "title": "A Schema",
+                            "type": "number",
+                            "examples": [
+                                17.10643,
+                                48.15757
+                            ]
+                        },
+                        "examples": [
+                            [17.10643,
+                                48.15757
+                            ]
+                        ]
+                    },
+                    "plugs": {
+                        "title": "The plugs Schema",
+                        "type": "array",
+                        "default": [],
+                        "items": {
+                            "title": "A Schema",
+                            "type": "object",
+                            "required": [
+                                "$type",
+                                "type",
+                                "voltage",
+                                "amperage",
+                                "available"
+                            ],
+                            "properties": {
+                                "$type": {
+                                    "title": "The $type Schema",
+                                    "type": "string",
+                                    "examples": [
+                                        "Feed:Charger:Plug"
+                                    ]
+                                },
+                                "type": {
+                                    "title": "The type Schema",
+                                    "type": "string",
+                                    "examples": [
+                                        "type"
+                                    ]
+                                },
+                                "voltage": {
+                                    "title": "The voltage Schema",
+                                    "type": "string",
+                                    "examples": [
+                                        "voltage"
+                                    ]
+                                },
+                                "amperage": {
+                                    "title": "The amperage Schema",
+                                    "type": "string",
+                                    "examples": [
+                                        "amperage"
+                                    ]
+                                },
+                                "available": {
+                                    "title": "The available Schema",
+                                    "type": "string",
+                                    "examples": [
+                                        "available",
+                                        "unavailable",
+                                        "unknown"
+                                    ]
+                                }
+                            },
+                            "examples": [{
+                                "$type": "Feed:Charger:Plug",
+                                "type": "type",
+                                "voltage": "voltage",
+                                "amperage": "amperage",
+                                "available": "available"
+                            },
+                            {
+                                "$type": "Feed:Charger:Plug",
+                                "type": "type",
+                                "voltage": "voltage",
+                                "amperage": "amperage",
+                                "available": "unavailable"
+                            },
+                            {
+                                "$type": "Feed:Charger:Plug",
+                                "type": "type",
+                                "voltage": "voltage",
+                                "amperage": "amperage",
+                                "available": "unknown"
+                            }]
+                        },
+                        "examples": [
+                            [{
+                                "$type": "Feed:Charger:Plug",
+                                "type": "type",
+                                "voltage": "voltage",
+                                "amperage": "amperage",
+                                "available": "available"
+                            },
+                            {
+                                "$type": "Feed:Charger:Plug",
+                                "type": "type",
+                                "voltage": "voltage",
+                                "amperage": "amperage",
+                                "available": "unavailable"
+                            },
+                            {
+                                "$type": "Feed:Charger:Plug",
+                                "type": "type",
+                                "voltage": "voltage",
+                                "amperage": "amperage",
+                                "available": "unknown"
+                            }]
+                        ]
+                    }
+                },
+                "examples": [{
+                    "$type": "Feed:Charger",
+                    "name": "The Charger",
+                    "gps": [17.10643,
+                        48.15757
+                    ],
+                    "plugs": [{
+                        "$type": "Feed:Charger:Plug",
+                        "type": "type",
+                        "voltage": "voltage",
+                        "amperage": "amperage",
+                        "available": "available"
+                    },
+                    {
+                        "$type": "Feed:Charger:Plug",
+                        "type": "type",
+                        "voltage": "voltage",
+                        "amperage": "amperage",
+                        "available": "unavailable"
+                    },
+                    {
+                        "$type": "Feed:Charger:Plug",
+                        "type": "type",
+                        "voltage": "voltage",
+                        "amperage": "amperage",
+                        "available": "unknown"
+                    }]
+                }]
+            },
+            "examples": [
+                [{
+                    "$type": "Feed:Charger",
+                    "name": "The Charger",
+                    "gps": [17.10643,
+                        48.15757
+                    ],
+                    "plugs": [{
+                        "$type": "Feed:Charger:Plug",
+                        "type": "type",
+                        "voltage": "voltage",
+                        "amperage": "amperage",
+                        "available": "available"
+                    },
+                    {
+                        "$type": "Feed:Charger:Plug",
+                        "type": "type",
+                        "voltage": "voltage",
+                        "amperage": "amperage",
+                        "available": "unavailable"
+                    },
+                    {
+                        "$type": "Feed:Charger:Plug",
+                        "type": "type",
+                        "voltage": "voltage",
+                        "amperage": "amperage",
+                        "available": "unknown"
+                    }]
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "$schema": "https://gcfs.isithere.sk/discotype/alpha/chargers.schema.json",
+        "type": "Feed:discovery:chargers",
+        "data": [{
+            "$type": "Feed:Charger",
+            "name": "The Charger",
+            "gps": [17.10643,
+                48.15757
+            ],
+            "plugs": [{
+                "$type": "Feed:Charger:Plug",
+                "type": "type",
+                "voltage": "voltage",
+                "amperage": "amperage",
+                "available": "available"
+            },
+            {
+                "$type": "Feed:Charger:Plug",
+                "type": "type",
+                "voltage": "voltage",
+                "amperage": "amperage",
+                "available": "unavailable"
+            },
+            {
+                "$type": "Feed:Charger:Plug",
+                "type": "type",
+                "voltage": "voltage",
+                "amperage": "amperage",
+                "available": "unknown"
+            }]
+        }]
+    }]
+}

@@ -1,0 +1,39 @@
+{
+    //"$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "Feed:Root",
+    "publisher": {
+        "$type": "Feed:Publisher",
+        "name": "The Publisher",
+        "url": "http://www.example.com",
+        "contact": [
+            "mailto:example@example.com", "tel:+1-555-555-5555", "http://www.example.com/contact"
+        ]
+    },
+    "providers": [
+        {
+            "$type": "Feed:Provider",
+            "name": "The Provider",
+            "url": "http://www.example.com",
+            "contact": [
+                "mailto:example@example.com", "tel:+1-555-555-5555", "http://www.example.com/contact"
+            ]
+        }
+    ],
+    "chargers": [
+        {
+            "$type": "Feed:Charger",
+            "name": "The Charger",
+            "gps": ["longitude", "latitude"],
+            "plugs": [
+                {
+                    "$type": "Feed:Charger:Plug",
+                    "type": "type", // type1, type2, chademo, css, tesla, commando, schuko, j1772 ...
+                    "voltage": "voltage", // 240, 480, 12, 24, 48, 60, 120, 240, 480, ...
+                    "amperage": "amperage", // 1, 2, 3, 4, 6, 8, 10, 12, 16, ... - not required
+                    "amount": "amount" // 1, 2, 3, 4, 6, 8, 10, 12, 16, ... - of chargers
+                }
+            ]
+        }
+    ]
+
+}

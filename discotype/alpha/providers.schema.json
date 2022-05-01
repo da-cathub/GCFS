@@ -1,0 +1,140 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "https://gcfs.isithere.sk/discotype/alpha/providers.schema.json",
+    "title": "Root Schema",
+    "type": "object",
+    "default": {},
+    "required": [
+        "$schema",
+        "type",
+        "data"
+    ],
+    "properties": {
+        "$schema": {
+            "title": "The $schema Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "https://gcfs.isithere.sk/discotype/alpha/providers.schema.json"
+            ]
+        },
+        "type": {
+            "title": "The type Schema",
+            "type": "string",
+            "default": "",
+            "examples": [
+                "Feed:discovery:provider"
+            ]
+        },
+        "data": {
+            "title": "The data Schema",
+            "type": "array",
+            "default": [],
+            "items": {
+                "title": "A Schema",
+                "type": "object",
+                "default": {},
+                "required": [
+                    "$type",
+                    "name",
+                    "id",
+                    "url",
+                    "contact"
+                ],
+                "properties": {
+                    "$type": {
+                        "title": "The $type Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "Feed:Provider"
+                        ]
+                    },
+                    "name": {
+                        "title": "The name Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "The Provider"
+                        ]
+                    },
+                    "id": {
+                        "title": "The id Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "the-provider"
+                        ]
+                    },
+                    "url": {
+                        "title": "The url Schema",
+                        "type": "string",
+                        "default": "",
+                        "examples": [
+                            "http://www.example.com"
+                        ]
+                    },
+                    "contact": {
+                        "title": "The contact Schema",
+                        "type": "array",
+                        "default": [],
+                        "items": {
+                            "title": "A Schema",
+                            "type": "string",
+                            "examples": [
+                                "mailto:example@example.com",
+                                "tel:+1-555-555-5555",
+                                "http://www.example.com/contact"
+                            ]
+                        },
+                        "examples": [
+                            ["mailto:example@example.com",
+                                "tel:+1-555-555-5555",
+                                "http://www.example.com/contact"
+                            ]
+                        ]
+                    }
+                },
+                "examples": [{
+                    "$type": "Feed:Provider",
+                    "name": "The Provider",
+                    "id": "the-provider",
+                    "url": "http://www.example.com",
+                    "contact": [
+                        "mailto:example@example.com",
+                        "tel:+1-555-555-5555",
+                        "http://www.example.com/contact"
+                    ]
+                }]
+            },
+            "examples": [
+                [{
+                    "$type": "Feed:Provider",
+                    "name": "The Provider",
+                    "id": "the-provider",
+                    "url": "http://www.example.com",
+                    "contact": [
+                        "mailto:example@example.com",
+                        "tel:+1-555-555-5555",
+                        "http://www.example.com/contact"
+                    ]
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "$schema": "https://gcfs.isithere.sk/discotype/alpha/providers.schema.json",
+        "type": "Feed:discovery:provider",
+        "data": [{
+            "$type": "Feed:Provider",
+            "name": "The Provider",
+            "id": "the-provider",
+            "url": "http://www.example.com",
+            "contact": [
+                "mailto:example@example.com",
+                "tel:+1-555-555-5555",
+                "http://www.example.com/contact"
+            ]
+        }]
+    }]
+}

@@ -1,0 +1,9 @@
+{
+    "$schema": "https://gcfs.isithere.sk/discotype/alpha/discovery.schema.json",
+    "type": "Feed:discovery",
+    "data": {
+        "publisher": "https://try.gcfs.isithere.sk/gcfs/charginginco/publisher.json",
+        "providers": "https://try.gcfs.isithere.sk/gcfs/charginginco/providers.json",
+        "chargers": "https://try.gcfs.isithere.sk/gcfs/charginginco/chargers.json"
+    }
+}
