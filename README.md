@@ -19,3 +19,6 @@ Specification for public (Not just) EV Chargers in the wild. A JSON Specificatio
 | Available spaces     | ❌      | ✔️      |
 | Rent out links       | ✔️      | ✔️       |
 
+---
+
+> Icons from `Font Awesome`
