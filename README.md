@@ -2,7 +2,7 @@
 
 ⚠️ Work In Progress!
 
-Specification for public (Not just) EV Chargers in the wild. A JSON Document for apps and services to use and show data about chargers without separate API hassle
+Specification for public (Not just) EV Chargers in the wild. A JSON Specification for apps and services to use and show data about chargers without separate API hassle
 
 ### Latest Releases
 - `⍺lpha` First Release - https://github.com/da-cathub/GCFS/tree/main/discotype/alpha
